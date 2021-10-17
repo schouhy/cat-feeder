@@ -1,0 +1,21 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "string.h": "c",
+        "stdlib.h": "c",
+        "*.inc": "c",
+        "*.tcc": "c",
+        "cstdlib": "c",
+        "memory": "c",
+        "*.ipp": "c",
+        "future": "c",
+        "limits": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "event_source.h": "c",
+        "feeder_event_source.h": "c",
+        "feeder_servo_driver.h": "c",
+        "feeder_wifi_connector.h": "c"
+    }
+}
