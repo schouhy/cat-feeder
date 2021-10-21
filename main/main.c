@@ -7,6 +7,8 @@
 #include "feeder_webserver.h"
 #include "feeder_timer.h"
 
+#include "feeder_sound.h"
+
 ESP_EVENT_DEFINE_BASE(LID_EVENTS);
 
 ESP_EVENT_DEFINE_BASE(TIMER_EVENTS);
@@ -17,6 +19,7 @@ ESP_EVENT_DEFINE_BASE(WEBSERVER_EVENTS);
 
 void app_main(void)
 {
+    run_sound();
     // Initialise ESP
     ESP_ERROR_CHECK( nvs_flash_init() );
     ESP_ERROR_CHECK( esp_netif_init() );
