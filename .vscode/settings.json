@@ -16,6 +16,9 @@
         "event_source.h": "c",
         "feeder_event_source.h": "c",
         "feeder_servo_driver.h": "c",
-        "feeder_wifi_connector.h": "c"
+        "feeder_wifi_connector.h": "c",
+        "feeder_sound.h": "c",
+        "mqtt_client.h": "c",
+        "esp_tls.h": "c"
     }
 }

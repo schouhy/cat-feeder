@@ -12,7 +12,6 @@
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
 
-
 #define LEDC_TIMER              LEDC_TIMER_0
 #define LEDC_MODE               LEDC_HIGH_SPEED_MODE
 #define LEDC_OUTPUT_IO          (16) // Define the output GPIO

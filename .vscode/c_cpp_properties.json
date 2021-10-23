@@ -8,7 +8,7 @@
                 "${config:idf.espIdfPath}/components/**",
                 "${workspaceFolder}/**",
                 "/usr/include/**",
-                "/opt/esp/idf/examples/peripherals/secure_element/atecc608_ecdsa/components/esp-cryptoauthlib/cryptoauthlib/**"
+                //"/opt/esp/idf/examples/peripherals/secure_element/atecc608_ecdsa/components/esp-cryptoauthlib/cryptoauthlib/**"
             ],
             "browse": {
                 "path": [

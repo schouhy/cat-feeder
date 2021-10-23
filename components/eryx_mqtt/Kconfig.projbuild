@@ -1,0 +1,13 @@
+menu "Eryx MQTT IoT Logger Configuration"
+    config MQTT_USERNAME
+        string "MQTT username"
+        default ""
+        help
+            The username
+
+    config MQTT_PASSWORD
+        string "MQTT password"
+        default ""
+        help
+            The password
+endmenu

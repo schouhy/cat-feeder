@@ -9,6 +9,8 @@
 
 #include "feeder_sound.h"
 
+#include "eryx_mqtt.h"
+
 ESP_EVENT_DEFINE_BASE(LID_EVENTS);
 
 ESP_EVENT_DEFINE_BASE(TIMER_EVENTS);
@@ -38,6 +40,10 @@ void app_main(void)
     // Initialise Wifi
     initialise_wifi_connector();
     wait_for_wifi_connection();
+
+    // Initialize Eryx MQTT
+    eryx_mqtt_initialize();
+    eryx_mqtt_wait_for_connection();
 
     // Sync datetime with SNTP
     sync_buenos_aires_sntp_datetime();
