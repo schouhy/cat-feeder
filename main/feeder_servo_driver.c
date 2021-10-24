@@ -4,6 +4,7 @@
 
 #include "feeder_servo_driver.h"
 #include "feeder_state.h"
+#include "feeder_sound.h"
 
 
 #define SERVO_MIN_PULSEWIDTH_US (1000) // Minimum pulse width in microsecond
@@ -36,6 +37,7 @@ void init_servo(void)
 
 void lid_handler_open(void* handler_args, esp_event_base_t base, int32_t id, void* event_data)
 {
+    run_sound();
     if(get_current_state() == OPENING_LID) {
         ESP_LOGI(TAG, "lid handler open called");
         for (int angle = -SERVO_MAX_DEGREE; angle < SERVO_MAX_DEGREE; angle += 2) {
