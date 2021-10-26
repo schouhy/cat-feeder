@@ -7,7 +7,7 @@
 #include "feeder_state.h"
 #include "feeder_timer.h"
 
-#define TIMER_PERIOD 1000000  // period of the timer event source in microseconds
+#define TIMER_PERIOD 100000  // period of the timer event source in microseconds
 
 static const char *TAG = "TIMER";
 
